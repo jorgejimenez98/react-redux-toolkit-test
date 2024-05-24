@@ -1,0 +1,33 @@
+/* ------------------------ Global Styles ----------------------------------- */
+
+// Default global styles
+body {
+    font-family: 'sans-serif';
+}
+
+/* ---------------------------- Scroll BAR ------------------------ */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $primary;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+}
+
+/* TODO: delete */
+.test-scss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    p {
+        color: $primary;
+        font-style: italic;
+        font-size: 10rem;
+    }
+}

@@ -1,10 +1,11 @@
 import React from "react"
+import "./assets/styles/_main.scss"
 
 const App: React.FC = () => {
 
   return (
     <>
-      <div>
+      <div className="test-scss">
         <p>Content here...</p>
       </div>
     </>
