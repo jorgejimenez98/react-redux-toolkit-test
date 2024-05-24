@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "lint-fix": "eslint --ext .ts,.tsx ./src --fix",
     "lint": "eslint --ext .ts,.tsx ./src",
+    "prepare": "husky install",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,7 +25,13 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "husky": "^9.0.11",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:staged"
+    }
   }
 }
