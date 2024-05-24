@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 
 const App: React.FC = () => {
 
   return (
     <>
       <div>
-        Content here...
+        <p>Content here...</p>
       </div>
     </>
   )
