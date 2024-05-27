@@ -1,6 +1,7 @@
 export { default as Button } from "./button/Button"
 export { default as Card } from "./card/Card"
 export { default as Divider } from "./divider/Divider"
+export { default as Dropdown } from "./dropdown/Dropdown"
 export { default as Icon } from "./icon/Icon"
 export { default as Loader } from "./loader/Loader"
 export { default as Text } from "./text/Text"

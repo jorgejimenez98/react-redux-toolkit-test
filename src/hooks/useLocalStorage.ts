@@ -39,8 +39,16 @@ export const useLocalStorage = <T>(key: string, initialValue?: T) => {
     }
   }
 
+  // Remove item from LocalStorage
+  const removeItem = () => {
+    if (helper.isClientSide()) {
+      localStorage.removeItem(key)
+    }
+  }
+
   return {
     value: storedValue,
-    setValue
+    setValue,
+    removeItem
   }
 }
