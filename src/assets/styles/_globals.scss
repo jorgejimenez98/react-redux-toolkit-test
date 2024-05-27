@@ -16,6 +16,7 @@ body {
         margin: auto;
         flex-grow: 1;
         width: 100%;
+        margin-top: 2rem;
       
         @media (max-width: 1650px) {
           padding: 0 20px 0 20px;
@@ -52,4 +53,12 @@ body {
 /* ------------------------ Extra Styles -------------------------- */
 .pointer {
     cursor: pointer;
+}
+
+// Remove hover effects
+.no-hover {
+    &:hover {
+        background: unset;
+        color: unset;
+    }
 }
