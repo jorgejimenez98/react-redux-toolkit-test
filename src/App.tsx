@@ -4,6 +4,7 @@ import "@/lib/config/i18n"
 import "@/assets/styles/_main.scss"
 import { BrowserRouter } from "react-router-dom"
 
+import { Loader } from "./components/ui"
 import { selectCurrentUser } from "./stores/slices"
 import { useAppSelector } from "./stores/store"
 
@@ -16,7 +17,8 @@ const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <Suspense fallback='Loading...'>
+      <Suspense fallback={<Loader />}>
+
         <Flex direction="col" className="min-vh-100">
           {/* Header */}
           <CurrentHeader />
