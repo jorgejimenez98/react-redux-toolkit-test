@@ -10,6 +10,8 @@ const HomePage = (): JSX.Element => {
       <h1>
         {t("Home.Title")}
       </h1>
+
+      <button className="btn btn-warning" >Hola mundo</button>
     </div>
   )
 }

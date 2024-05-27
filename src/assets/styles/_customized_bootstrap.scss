@@ -1,0 +1,35 @@
+// Global Focus
+.btn {
+    &:focus {
+        outline: 4px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+// ------------------------------------ Default input styles ---------------------------------
+.input-shadow {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 0px 1px rgba(103, 110, 118, 0.16);
+    box-shadow: 0px 2px 5px 0px rgba(103, 110, 118, 0.08);
+}
+
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+.uneditable-input {
+    @extend .input-shadow;
+    padding: 10px 14px 10px 14px;
+    border-radius: 8px;
+    height: 44px ;
+    min-width: 202.6px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+.uneditable-input:focus {
+    border-color: $primary-soft-blue;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px $primary;
+    outline: 0 none;
+}
