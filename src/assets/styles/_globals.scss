@@ -17,17 +17,3 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: $primary;
 }
-
-/* TODO: delete */
-.test-scss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    p {
-        color: $primary;
-        font-style: italic;
-        font-size: 10rem;
-    }
-}
