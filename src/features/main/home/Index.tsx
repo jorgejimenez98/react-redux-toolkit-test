@@ -2,7 +2,10 @@ import { JSX } from "react"
 
 const HomePage = (): JSX.Element => {
   return (
-    <div>HomePage</div>
+    <div>
+      <h1>Home Page content</h1>
+
+    </div>
   )
 }
 

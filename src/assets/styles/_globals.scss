@@ -2,7 +2,12 @@
 
 // Default global styles
 body {
-    font-family: 'sans-serif';
+    font-family: 'Newson', sans-serif;
+
+    // Application background color
+    background: $bg-main;
+    background: -webkit-linear-gradient(to right, $bg-secondary, $bg-terciary, bg-soft, $bg-main);
+    background: linear-gradient(to right, $bg-secondary, bg-terciary, $bg-hs, $bg-main);
 }
 
 /* ---------------------------- Scroll BAR ------------------------ */
