@@ -4,6 +4,8 @@
     },
     "Auth": {
         "Title": "React test application",
+        "Email": "Email address",
+        "Password": "Password",
         "Submit": "Login"
     },
     "Validations": {

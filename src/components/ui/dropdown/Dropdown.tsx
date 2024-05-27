@@ -5,9 +5,10 @@ import { useClickOutside } from "@/hooks"
 interface DropdownProps {
     children: React.ReactNode
     text: string
+    className?: string
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ children, text }) => {
+const Dropdown: React.FC<DropdownProps> = ({ children, text, className }) => {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useClickOutside(() => setIsOpen(false))
 
@@ -16,7 +17,11 @@ const Dropdown: React.FC<DropdownProps> = ({ children, text }) => {
   }
 
   return (
-    <div className="dropdown" ref={dropdownRef}>
+    <div
+      className={`dropdown ${className ? className : ""}`}
+      ref={dropdownRef}
+    >
+      {/* Drop down */}
       <button
         className="btn btn-secondary dropdown-toggle"
         type="button"
@@ -27,6 +32,7 @@ const Dropdown: React.FC<DropdownProps> = ({ children, text }) => {
         {text}
       </button>
 
+      {/* Menu Items */}
       <div className={`dropdown-menu ${isOpen ? "show" : ""}`}>
         {children}
       </div>

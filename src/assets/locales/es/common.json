@@ -4,6 +4,8 @@
     },
     "Auth": {
         "Title": "Aplicacion de Prueba en React",
+        "Email": "Correo electrónico",
+        "Password": "Contraseña",
         "Submit": "Acceder"
     },
     "Validations": {

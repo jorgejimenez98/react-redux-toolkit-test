@@ -4,8 +4,9 @@ import { Form, Formik } from "formik"
 import { useTranslation } from "react-i18next"
 import { redirect } from "react-router-dom"
 
+import { LanguageSelector } from "@/components/common"
 import { Flex } from "@/components/layouts"
-import { Button, Card, Divider } from "@/components/ui"
+import { Button, Card, Divider, Text } from "@/components/ui"
 import { TextInput } from "@/components/ui/_fields"
 import { useLocalStorage } from "@/hooks"
 import { ENV, PAGE_URLS } from "@/lib/constants"
@@ -29,10 +30,21 @@ const LoginPage = (): JSX.Element => {
 
   return (
     <Flex justify="center" align="center" className="w-100">
-      <Card
-        title={t("Auth.Title")}
-        className="mt-5 mx-2 w-100 fade-in login-container"
-      >
+      <Card className="mt-5 mx-2 w-100 fade-in login-container">
+
+        {/* Header */}
+        <Flex justify="between" xsdir="col">
+
+          {/* Title */}
+          <Text size="4" weight="bold">
+            {t("Auth.Title")}
+          </Text>
+
+          {/* Language Selector */}
+          <LanguageSelector />
+        </Flex>
+
+        <Divider className="mt-3 mb-4" />
 
         {/* Form */}
         <Formik
@@ -41,10 +53,11 @@ const LoginPage = (): JSX.Element => {
           onSubmit={handleSubmit}
         >
           <Form>
+
             {/* Email */}
             <TextInput
-              label="Correo electronico"
-              placeholder="Email"
+              label={t("Auth.Email")}
+              placeholder={t("Auth.Email")}
               alias="email"
               name="email"
               type="email"
@@ -53,8 +66,8 @@ const LoginPage = (): JSX.Element => {
             {/* Password */}
             <TextInput
               className="mt-3"
-              placeholder="Password"
-              label="Password"
+              placeholder={t("Auth.Password")}
+              label={t("Auth.Password")}
               alias="password"
               name="password"
               type="password"

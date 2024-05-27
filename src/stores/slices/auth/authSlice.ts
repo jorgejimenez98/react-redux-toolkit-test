@@ -20,7 +20,7 @@ const slice = createSlice({
 
   // Reducers
   reducers: {
-    setUser: (state, { payload }: PayloadAction<AuthUser>) => {
+    setUser: (state, { payload }: PayloadAction<AuthUser | null>) => {
       state.user = payload
     }
   }
