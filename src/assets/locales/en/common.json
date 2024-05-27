@@ -6,6 +6,10 @@
         "Title": "React test application",
         "Submit": "Login"
     },
+    "Validations": {
+        "InvalidEmail": "Invalid email",
+        "Required": "This field is required"
+    },
     "General": {
         "MainHeader": "React frontend test",
         "PublicHeader": "Welcome to React Test",

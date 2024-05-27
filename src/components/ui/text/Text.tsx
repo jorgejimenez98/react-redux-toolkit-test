@@ -10,6 +10,7 @@ const Text: React.FC<TextProps> = ({
   transform,
   decoration,
   children,
+  htmlFor,
   className
 }) => {
 
@@ -35,7 +36,10 @@ const Text: React.FC<TextProps> = ({
   ].filter(Boolean).join(" ")
 
   return (
-    <Tag className={CLASS_NAMES}>
+    <Tag
+      className={CLASS_NAMES}
+      htmlFor={Tag === "label" ? htmlFor : undefined}
+    >
       {/* Text */}
       {children}
     </Tag>

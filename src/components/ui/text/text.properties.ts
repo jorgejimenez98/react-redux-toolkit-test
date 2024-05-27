@@ -14,4 +14,5 @@ export interface TextProps {
   decoration?: TextDecoration
   children: React.ReactNode
   className?: string
+  htmlFor?: string
 }

@@ -6,6 +6,10 @@
         "Title": "Aplicacion de Prueba en React",
         "Submit": "Acceder"
     },
+    "Validations": {
+        "InvalidEmail": "Correo no válido",
+        "Required": "Campo requerido"
+    },
     "General": {
         "MainHeader": "Prueba frontend de React",
         "PublicHeader": "Bienvenido a la prueba de React",
