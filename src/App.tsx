@@ -1,6 +1,7 @@
 import React, { Suspense } from "react"
 
-import "./assets/styles/_main.scss"
+import "@/lib/config/i18n"
+import "@/assets/styles/_main.scss"
 import { BrowserRouter } from "react-router-dom"
 
 import { Router } from "@/components/common"

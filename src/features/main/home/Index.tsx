@@ -1,12 +1,15 @@
 import { JSX } from "react"
 
-import { Icon } from "@/components/ui"
+import { useTranslation } from "react-i18next"
 
 const HomePage = (): JSX.Element => {
+  const { t } = useTranslation()
+
   return (
     <div>
-      <h1>Home Page content <Icon name="delete" onClick={() => console.warn("ASD")}/> </h1>
-
+      <h1>
+        {t("Home.Title")}
+      </h1>
     </div>
   )
 }
