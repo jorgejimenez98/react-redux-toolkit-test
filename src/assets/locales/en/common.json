@@ -2,6 +2,10 @@
     "Home": {
         "Title": "Users list"
     },
+    "Auth": {
+        "Title": "React test application",
+        "Submit": "Login"
+    },
     "General": {
         "MainHeader": "React frontend test",
         "PublicHeader": "Welcome to React Test",

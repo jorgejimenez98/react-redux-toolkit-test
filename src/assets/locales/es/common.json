@@ -2,6 +2,10 @@
     "Home": {
         "Title": "Listado de usuarios"
     },
+    "Auth": {
+        "Title": "Aplicacion de Prueba en React",
+        "Submit": "Acceder"
+    },
     "General": {
         "MainHeader": "Prueba frontend de React",
         "PublicHeader": "Bienvenido a la prueba de React",
