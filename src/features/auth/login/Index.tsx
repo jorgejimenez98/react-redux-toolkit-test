@@ -2,18 +2,29 @@ import { JSX } from "react"
 
 import { Form, Formik } from "formik"
 import { useTranslation } from "react-i18next"
+import { redirect } from "react-router-dom"
 
 import { Flex } from "@/components/layouts"
 import { Button, Card, Divider } from "@/components/ui"
 import { TextInput } from "@/components/ui/_fields"
+import { useLocalStorage } from "@/hooks"
+import { ENV, PAGE_URLS } from "@/lib/constants"
 import { loginFormInitialValues, loginFormSchema } from "@/lib/form-options"
-import { LoginPayload } from "@/lib/interfaces"
+import { AuthUser, LoginPayload } from "@/lib/interfaces"
+import { setUser } from "@/stores/slices"
+import { useAppDispatch } from "@/stores/store"
 
 const LoginPage = (): JSX.Element => {
   const { t } = useTranslation()
+  const dispatch = useAppDispatch()
+  const { setValue: setLocalStorageUser } = useLocalStorage<AuthUser>(ENV.USER_LOCALSTORAGE_KEY)
 
-  const handleSubmit = (values: LoginPayload) => {
-    console.warn("Sbmit", values)
+  const handleSubmit = ({ email }: LoginPayload) => {
+    // Todo: Add backend api call for Login
+
+    dispatch(setUser({ email }))
+    setLocalStorageUser({ email })
+    redirect(PAGE_URLS.HOME)
   }
 
   return (

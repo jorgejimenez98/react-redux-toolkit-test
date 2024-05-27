@@ -9,14 +9,23 @@ const Router: React.FC = () => {
   const user = useAppSelector(selectCurrentUser)
 
   const applicationRoutes = pagesRoutes.map(route => {
-    // If user is not authenticated, redirect to Login page
 
+    // If user is not authenticated, redirect to Login page
     if (route?.isProtected && !user) {
       return (
         <Route
           key={route.title}
           path={route.path}
           element={<Navigate to={PAGE_URLS.LOGIN} />}
+        />
+      )
+    } else if (!route?.isProtected && user) {
+      // Redirect for Home if user is authenticated
+      return (
+        <Route
+          key={route.title}
+          path={route.path}
+          element={<Navigate to={PAGE_URLS.HOME} />}
         />
       )
     }
