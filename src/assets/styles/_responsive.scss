@@ -1,0 +1,6 @@
+@media (max-width: $screen-md-max) {
+    .app-flex-sm-column {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+}
