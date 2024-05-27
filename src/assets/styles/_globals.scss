@@ -21,6 +21,19 @@ body {
           padding: 0 20px 0 20px;
         }
     }
+
+    // Global header Styles
+    header {
+        max-height: $header-heigth;
+        min-height: $header-heigth;
+        background-color: $secondary;
+        padding: 0 20px 0 20px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
+      }
 }
 
 /* ---------------------------- Scroll BAR ------------------------ */
@@ -36,6 +49,7 @@ body {
     background-color: $primary;
 }
 
+/* ------------------------ Extra Styles -------------------------- */
 .pointer {
     cursor: pointer;
 }

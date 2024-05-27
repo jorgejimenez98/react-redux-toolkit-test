@@ -3,6 +3,8 @@
         "Title": "Listado de usuarios"
     },
     "General": {
+        "MainHeader": "Prueba frontend de React",
+        "PublicHeader": "Bienvenido a la prueba de React",
         "Footer": "Copyright © {{ currentYear }} - Todos los derechos reservados"
     }
 }

@@ -3,6 +3,8 @@
         "Title": "Users list"
     },
     "General": {
+        "MainHeader": "React frontend test",
+        "PublicHeader": "Welcome to React Test",
         "Footer": "Copyright © {{ currentYear }} - All right reserved "
     }
 }
