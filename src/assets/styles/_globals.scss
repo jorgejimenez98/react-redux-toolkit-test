@@ -6,8 +6,8 @@ body {
 
     // Application background color
     background: $bg-main;
-    background: -webkit-linear-gradient(to right, $bg-secondary, $bg-terciary, bg-soft, $bg-main);
-    background: linear-gradient(to right, $bg-secondary, bg-terciary, $bg-hs, $bg-main);
+    background: -webkit-linear-gradient(to right, $white, $bg-main);
+    background: linear-gradient(to right, $white, $bg-main);
 }
 
 /* ---------------------------- Scroll BAR ------------------------ */
@@ -21,4 +21,8 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: $primary;
+}
+
+.pointer {
+    cursor: pointer;
 }
