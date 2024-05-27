@@ -1,0 +1,15 @@
+.logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: normal;
+    cursor: pointer;
+    color: $primary;
+
+    .logo-text {
+        font-family: "Agustina Regular";
+        font-weight: bold;
+        font-variant-ligatures: no-common-ligatures;
+        -webkit-font-variant-ligatures: no-common-ligatures;
+        padding: 0 10px;
+    }
+}
