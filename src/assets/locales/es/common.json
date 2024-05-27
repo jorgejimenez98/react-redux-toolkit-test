@@ -1,5 +1,8 @@
 {
     "Home": {
         "Title": "Listado de usuarios"
+    },
+    "General": {
+        "Footer": "Copyright © {{ currentYear }} - Todos los derechos reservados"
     }
 }
