@@ -1,1 +1,5 @@
+export { default as Flex } from "./flex/Flex"
+export { default as Footer } from "./footer/Footer"
+export { default as MainHeader } from "./main-header/MainHeader"
 export { default as MainLayout } from "./main/MainLayout"
+export { default as PublicHeader } from "./public-header/PublicHeader"

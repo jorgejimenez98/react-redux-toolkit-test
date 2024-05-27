@@ -14,6 +14,8 @@ body {
     .app-main-layout {
         max-width: $app-max-width;
         margin: auto;
+        flex-grow: 1;
+        width: 100%;
       
         @media (max-width: 1650px) {
           padding: 0 20px 0 20px;

@@ -4,24 +4,31 @@ import "@/lib/config/i18n"
 import "@/assets/styles/_main.scss"
 import { BrowserRouter } from "react-router-dom"
 
+import { selectCurrentUser } from "./stores/slices"
+import { useAppSelector } from "./stores/store"
+
 import { Router } from "@/components/common"
-import { MainLayout } from "@/components/layouts"
+import { Flex, Footer, MainHeader, MainLayout, PublicHeader } from "@/components/layouts"
 
 const App: React.FC = () => {
+  const user = useAppSelector(selectCurrentUser)
+  const CurrentHeader = user ? MainHeader : PublicHeader
 
   return (
     <BrowserRouter>
       <Suspense fallback='Loading...'>
+        <Flex direction="col" className="min-vh-100">
+          {/* Header */}
+          <CurrentHeader />
 
-        <p>Header Here...</p>
+          {/* All Routes */}
+          <MainLayout>
+            <Router />
+          </MainLayout>
 
-        {/* All Routes */}
-        <MainLayout>
-          <Router />
-        </MainLayout>
-
-        <p>Footer here...</p>
-
+          {/* Footer */}
+          <Footer />
+        </Flex>
       </Suspense>
     </BrowserRouter>
   )
