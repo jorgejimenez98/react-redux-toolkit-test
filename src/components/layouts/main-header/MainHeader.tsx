@@ -11,10 +11,10 @@ const MainHeader: React.FC = () => {
 
   return (
     <header>
-      <Flex align="center" justify="between" className="w-100 mt-1">
+      <Flex align="center" justify="between" xsdir="col" className="w-100 mt-1">
         <Logo text={t("General.MainHeader")} />
 
-        <Flex gap="3" className="me-5" >
+        <Flex gap="3" className="me-5 me-sm-none" align="center" xsdir="col">
           <LanguageSelector />
 
           <UserMenu />
