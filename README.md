@@ -15,6 +15,12 @@ yarn --save
 yarn dev
 ```
 
+### Run Cypress tests
+
+```sh
+npm cypress open
+```
+
 
 ### Once the project is ready, the application will be running on port 5173
 
