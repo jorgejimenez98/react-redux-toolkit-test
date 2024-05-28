@@ -29,3 +29,19 @@
         opacity: 1;
     }
 }
+
+.animate-up {
+    animation: up-animation ease 0.5s;
+}
+
+@keyframes up-animation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

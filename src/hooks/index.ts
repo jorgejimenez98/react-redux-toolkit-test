@@ -1,4 +1,5 @@
 export { useClickOutside } from "./useClickOutside"
 export { useHtmlDocument } from "./useHtmlDocument"
 export { useLocalStorage } from "./useLocalStorage"
+export { useModal } from "./useModal"
 export { useWindowSize } from "./useWindowSize"

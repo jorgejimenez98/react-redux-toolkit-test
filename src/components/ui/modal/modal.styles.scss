@@ -1,0 +1,36 @@
+.modal-mask {
+    background: hsla(0, 0%, 100%, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: block;
+    z-index: $z-index-modal;
+
+    .modal-content {
+        border-radius: 16px;
+        padding: 16px;
+
+        .app-modal-body {
+            position: relative;
+            flex: 1 1 auto;
+            max-height: calc(100vh - 260px);
+            overflow: auto;
+        }
+    }
+
+    .modal-header {
+        .default-title {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+
+        .close-icon {
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+            &:hover {
+                color: $primary;
+                transform: rotate(90deg) scale(1.3);
+            }
+        }
+    }
+}
