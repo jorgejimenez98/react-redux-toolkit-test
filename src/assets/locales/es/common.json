@@ -1,33 +1,33 @@
 {
-    "Home": {
-        "Title": "Listado de usuarios"
-    },
-    "Auth": {
-        "Title": "Aplicacion de Prueba en React",
-        "Email": "Correo electrónico",
-        "Password": "Contraseña",
-        "Submit": "Acceder"
-    },
-    "Users": {
-        "Item": "Usuario {{ id }}",
-        "Posts": "{{ value }} Publicaciones"
-    },
-    "Validations": {
-        "InvalidEmail": "Correo no válido",
-        "Required": "Campo requerido"
-    },
-    "Posts": {
-        "Title": "Título",
-        "Body": "Cuerpo",
-        "Delete": "Eliminar publicación",
-        "SureDelete": "¿Seguro que desea eliminar la publicación?"
-    },
-    "General": {
-        "DeleteSuccess": "Registro eliminado correctamente",
-        "EditSuccess": "Registro editado correctamente",
-        "Accept": "Aceptar",
-        "MainHeader": "Prueba frontend de React",
-        "PublicHeader": "Bienvenido a la prueba de React",
-        "Footer": "Copyright © {{ currentYear }} - Todos los derechos reservados"
-    }
+  "Auth": {
+    "Email": "Correo electrónico",
+    "Password": "Contraseña",
+    "Submit": "Acceder",
+    "Title": "Aplicacion de Prueba en React"
+  },
+  "General": {
+    "Accept": "Aceptar",
+    "DeleteSuccess": "Registro eliminado correctamente",
+    "EditSuccess": "Registro editado correctamente",
+    "Footer": "Copyright © {{ currentYear }} - Todos los derechos reservados",
+    "MainHeader": "Prueba frontend de React",
+    "PublicHeader": "Bienvenido a la prueba de React"
+  },
+  "Home": {
+    "Title": "Listado de usuarios"
+  },
+  "Posts": {
+    "Body": "Cuerpo",
+    "Delete": "Eliminar publicación",
+    "SureDelete": "¿Seguro que desea eliminar la publicación?",
+    "Title": "Título"
+  },
+  "Users": {
+    "Item": "Usuario {{ id }}",
+    "Posts": "{{ value }} Publicaciones"
+  },
+  "Validations": {
+    "InvalidEmail": "Correo no válido",
+    "Required": "Campo requerido"
+  }
 }

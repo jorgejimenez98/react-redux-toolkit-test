@@ -1,34 +1,34 @@
 {
-    "Home": {
-        "Title": "Users list"
-    },
-    "Auth": {
-        "Title": "React test application",
-        "Email": "Email address",
-        "Password": "Password",
-        "Submit": "Login"
-    },
-    "Users": {
-        "Item": "User {{ id }}",
-        "Posts": "{{ value }} Posts"
-    },
-    "Validations": {
-        "InvalidEmail": "Invalid email",
-        "Required": "This field is required"
-    },
-    "Posts": {
-        "Title": "Title",
-        "Body": "Body",
-        "Delete": "Delete Post",
-        "SureDelete": "Are you sure you want to delete the post?"
-    },
-    "General": {
-        "Edit": "Editar",
-        "DeleteSuccess": "Registry deleted successfully",
-        "EditSuccess": "Registry edited successfully",
-        "Accept": "Accept",
-        "MainHeader": "React frontend test",
-        "PublicHeader": "Welcome to React Test",
-        "Footer": "Copyright © {{ currentYear }} - All rights reserved "
-    }
+  "Auth": {
+    "Email": "Email address",
+    "Password": "Password",
+    "Submit": "Login",
+    "Title": "React test application"
+  },
+  "General": {
+    "Accept": "Accept",
+    "DeleteSuccess": "Registry deleted successfully",
+    "Edit": "Editar",
+    "EditSuccess": "Registry edited successfully",
+    "Footer": "Copyright © {{ currentYear }} - All rights reserved ",
+    "MainHeader": "React frontend test",
+    "PublicHeader": "Welcome to React Test"
+  },
+  "Home": {
+    "Title": "Users list"
+  },
+  "Posts": {
+    "Body": "Body",
+    "Delete": "Delete Post",
+    "SureDelete": "Are you sure you want to delete the post?",
+    "Title": "Title"
+  },
+  "Users": {
+    "Item": "User {{ id }}",
+    "Posts": "{{ value }} Posts"
+  },
+  "Validations": {
+    "InvalidEmail": "Invalid email",
+    "Required": "This field is required"
+  }
 }

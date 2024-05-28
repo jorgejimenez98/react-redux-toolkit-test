@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# React Frontend test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Install all dependencies
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+yarn --save
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Rename ```.env.example``` a ```.env``` to get the env variables
+
+
+### Run application
+
+```sh
+yarn dev
+```
+
+
+### Once the project is ready, the application will be running on port 5173
+
+##  [http://localhost:5173](http://localhost:5173).
+
+
+
+### Notes
+  - Authentication is just a layout, you can use any email and password to enter the list
+
+
+# Some Images
+---
+![](/public/images/image.png)
+
+![](/public/images/image-1.png)
+
+![](/public/images/image-2.png)
+
+![](/public/images/image-3.png)
