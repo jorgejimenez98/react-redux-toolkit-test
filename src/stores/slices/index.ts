@@ -13,4 +13,7 @@ export {
 }
 
 // Export Post Functions
-export { allUserPostsSelector } from "./posts/posts-slice.selectors"
+export {
+  allUserPostsSelector,
+  selectPostsByUserId
+} from "./posts/posts-slice.selectors"

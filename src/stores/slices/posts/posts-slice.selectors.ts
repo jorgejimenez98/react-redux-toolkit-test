@@ -3,6 +3,7 @@ import { createSelector } from "reselect"
 import { Post, UserPosts } from "@/lib/interfaces"
 import { RootState } from "@/stores/store"
 
+/* Selector to get all Users by Posts */
 export const allUserPostsSelector = createSelector(
   (state: RootState) => state.posts.posts,
   (allPosts): UserPosts[] => {
@@ -25,5 +26,15 @@ export const allUserPostsSelector = createSelector(
     }))
 
     return result
+  }
+)
+
+
+// Selector to filter posts by userId
+export const selectPostsByUserId = (userId?: string) => createSelector(
+  (state: RootState) => state.posts.posts,
+  (posts): Post[] => {
+    if (!userId) return []
+    return posts.filter(post => post.userId === +userId)
   }
 )
