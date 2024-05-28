@@ -23,7 +23,7 @@ const UserPostFormModal: React.FC<UserPostFormModalProps> = props => {
 
   return (
     <Modal
-      title="Editar Post"
+      title={t("Posts.EditPost")}
       visible={visible}
       handleClose={handleClose}
     >

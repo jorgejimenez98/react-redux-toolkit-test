@@ -18,6 +18,7 @@
   },
   "Posts": {
     "Body": "Cuerpo",
+    "EditPost": "Editar publicación",
     "Delete": "Eliminar publicación",
     "SureDelete": "¿Seguro que desea eliminar la publicación?",
     "Title": "Título"

@@ -20,6 +20,7 @@
   "Posts": {
     "Body": "Body",
     "Delete": "Delete Post",
+    "EditPost": "Edit Post",
     "SureDelete": "Are you sure you want to delete the post?",
     "Title": "Title"
   },
