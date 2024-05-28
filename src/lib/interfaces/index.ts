@@ -1,3 +1,4 @@
+export type { UiState, UiConfirmModalPayload, UiConfirmModalData } from "./ui.interface"
 export type { IconVariant } from "./icon-variant.interface"
 export type { AppRoute } from "./route.interface"
 export type { AuthUser, LoginPayload, AuthSliceState } from "./auth-user.interface"

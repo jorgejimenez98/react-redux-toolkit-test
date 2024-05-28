@@ -14,7 +14,12 @@ export const createStore = () =>
       ...appSlices
     },
     middleware: getDefaultMiddleware =>
-      getDefaultMiddleware().concat(api.middleware)
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: ["ui/showConfirmModal"],
+          ignoredPaths: ["ui.confirmModal.onAccept"]
+        }
+      }).concat(api.middleware)
   })
 
 export const store = createStore()

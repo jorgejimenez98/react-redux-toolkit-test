@@ -8,7 +8,7 @@ import { Loader } from "./components/ui"
 import { selectCurrentUser } from "./stores/slices"
 import { useAppSelector } from "./stores/store"
 
-import { Router, ScrollUp } from "@/components/common"
+import { ConfirmModal, Router, ScrollUp } from "@/components/common"
 import { Flex, Footer, MainHeader, MainLayout, PublicHeader } from "@/components/layouts"
 
 const App: React.FC = () => {
@@ -33,6 +33,7 @@ const App: React.FC = () => {
 
           {/* Wrappers */}
           <ScrollUp />
+          <ConfirmModal />
         </Flex>
       </Suspense>
     </BrowserRouter>
