@@ -12,7 +12,7 @@ export default defineConfig({
 
   env: {
     VITE_FRONTEND_URL: "http://localhost:5173",
-    VITE_BACKEND_URL: "http://jsonplaceholder.typicode.com",
+    VITE_BACKEND_URL: "https://jsonplaceholder.typicode.com",
     VITE_USER_LOCALSTORAGE_KEY: "user-local"
   },
 
