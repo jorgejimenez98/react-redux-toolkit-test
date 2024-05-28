@@ -17,11 +17,14 @@
         "Required": "Campo requerido"
     },
     "Posts": {
+        "Title": "Título",
+        "Body": "Cuerpo",
         "Delete": "Eliminar publicación",
         "SureDelete": "¿Seguro que desea eliminar la publicación?"
     },
     "General": {
         "DeleteSuccess": "Registro eliminado correctamente",
+        "EditSuccess": "Registro editado correctamente",
         "Accept": "Aceptar",
         "MainHeader": "Prueba frontend de React",
         "PublicHeader": "Bienvenido a la prueba de React",

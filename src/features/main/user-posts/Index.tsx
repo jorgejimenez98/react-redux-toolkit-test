@@ -11,7 +11,7 @@ import { Icon, List, Text } from "@/components/ui"
 import { useModal } from "@/hooks"
 import { PAGE_URLS } from "@/lib/constants"
 import { Post } from "@/lib/interfaces"
-import { deletePost, selectPostsByUserId } from "@/stores/slices"
+import { deletePost, selectPostsByUserId, editPost } from "@/stores/slices"
 import { useAppDispatch, useAppSelector } from "@/stores/store"
 
 const UserPostsPage = (): JSX.Element => {
@@ -25,6 +25,12 @@ const UserPostsPage = (): JSX.Element => {
   const handleDeletePost = (postId: number) => {
     dispatch(deletePost(postId))
     toast.success(t("General.DeleteSuccess"))
+  }
+
+  const handleEditPost = (payload: Post) => {
+    dispatch(editPost(payload))
+    closeModal()
+    toast.success(t("General.EditSuccess"))
   }
 
   return (
@@ -67,6 +73,7 @@ const UserPostsPage = (): JSX.Element => {
           visible={visible}
           data={data}
           handleClose={closeModal}
+          handleSubmit={handleEditPost}
         />
       )}
     </div>

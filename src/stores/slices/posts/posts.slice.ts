@@ -14,9 +14,19 @@ const slice = createSlice({
 
   // Reducers
   reducers: {
+    // Delete Post
     deletePost: (state, { payload } : PayloadAction<number>) => {
       const oldList = state.posts
       state.posts = oldList.filter(post => post.id !== payload)
+    },
+
+    // Edit Post
+    editPost: (state, { payload } : PayloadAction<Post>) => {
+      const oldList = state.posts
+      state.posts = oldList.map(post => {
+        if (post.id === payload.id) return payload
+        return post
+      })
     }
   },
 
@@ -32,6 +42,6 @@ const slice = createSlice({
   }
 })
 
-export const { deletePost } = slice.actions
+export const { deletePost, editPost } = slice.actions
 
 export default slice.reducer

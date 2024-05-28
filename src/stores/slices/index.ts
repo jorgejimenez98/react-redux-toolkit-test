@@ -1,5 +1,5 @@
 import authSlice, { selectCurrentUser, setUser } from "./auth/authSlice"
-import postsSlice, { deletePost } from "./posts/posts.slice"
+import postsSlice, { deletePost, editPost } from "./posts/posts.slice"
 import uiSlice, { showConfirmModal, hideConfirmModal, selectConfirmModalVisible } from "./ui/ui.slice"
 
 export const appSlices = {
@@ -21,7 +21,8 @@ export {
 } from "./posts/posts-slice.selectors"
 
 export {
-  deletePost
+  deletePost,
+  editPost
 }
 
 // Export UI Functions

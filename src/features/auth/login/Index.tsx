@@ -61,6 +61,7 @@ const LoginPage = (): JSX.Element => {
               alias="email"
               name="email"
               type="email"
+              autoFocus
             />
 
             {/* Password */}

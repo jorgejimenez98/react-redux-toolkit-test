@@ -1,8 +1,11 @@
-export interface Post {
-    userId: number
-    id: number
+export interface PostFormPayload {
     title: string
     body: string
+}
+
+export interface Post extends PostFormPayload {
+    userId: number
+    id: number
 }
 
 export interface UserPosts {
