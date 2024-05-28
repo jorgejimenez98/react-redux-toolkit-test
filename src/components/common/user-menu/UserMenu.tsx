@@ -5,6 +5,7 @@ import { redirect } from "react-router-dom"
 import { Dropdown } from "@/components/ui"
 import { useLocalStorage } from "@/hooks"
 import { ENV, PAGE_URLS } from "@/lib/constants"
+import { helper } from "@/lib/helpers"
 import { selectCurrentUser, setUser } from "@/stores/slices"
 import { useAppDispatch, useAppSelector } from "@/stores/store"
 
@@ -22,7 +23,7 @@ const UserMenu: React.FC = () => {
   }
 
   return (
-    <Dropdown text={user?.email || ""}>
+    <Dropdown text={helper.substring(15, user?.email) || ""}>
       <span
         className="dropdown-item pointer"
         onClick={handleLogout}

@@ -9,6 +9,12 @@ class Helper {
       behavior: "smooth"
     })
   }
+
+  substring(quantity: number, text?: string): string {
+    if (!text) return ""
+    if (text.length < quantity) return text
+    return `${text.substring(0, quantity)}...`
+  }
 }
 
 const helper = new Helper()

@@ -14,7 +14,7 @@ const MainHeader: React.FC = () => {
       <Flex align="center" justify="between" xsdir="col" className="w-100 mt-1">
         <Logo text={t("General.MainHeader")} />
 
-        <Flex gap="3" className="me-5 me-sm-none" align="center" xsdir="col">
+        <Flex gap="3" className="me-5 me-sm-none" align="center">
           <LanguageSelector />
 
           <UserMenu />

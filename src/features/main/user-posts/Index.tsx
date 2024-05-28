@@ -35,9 +35,9 @@ const UserPostsPage = (): JSX.Element => {
 
   return (
     <div className="fade-in">
-      <Flex justify="between" gap="2" xsdir="col" align="center">
+      <Flex justify="between" gap="2" align="center" className="mb-3">
         {/* Title */}
-        <Flex gap="2" align="center" className="mb-3">
+        <Flex gap="2" align="center">
           <Link to={PAGE_URLS.HOME}>
             <Icon name="arrow_back" className="round-hover mt-1" />
           </Link>
