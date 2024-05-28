@@ -42,3 +42,13 @@ input[type="email"]:focus,
 .list-group-item {
     position: unset !important;
 }
+
+.btn-circle {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+}
