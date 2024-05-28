@@ -8,6 +8,10 @@
         "Password": "Contraseña",
         "Submit": "Acceder"
     },
+    "Users": {
+        "Item": "Usuario {{ id }}",
+        "Posts": "{{ value }} Publicaciones"
+    },
     "Validations": {
         "InvalidEmail": "Correo no válido",
         "Required": "Campo requerido"

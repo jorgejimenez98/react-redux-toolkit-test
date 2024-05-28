@@ -8,6 +8,10 @@
         "Password": "Password",
         "Submit": "Login"
     },
+    "Users": {
+        "Item": "User {{ id }}",
+        "Posts": "{{ value }} Posts"
+    },
     "Validations": {
         "InvalidEmail": "Invalid email",
         "Required": "This field is required"

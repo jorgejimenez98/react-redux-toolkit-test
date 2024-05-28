@@ -1,7 +1,9 @@
 const icons = [
   "edit",
-  "delete"
+  "delete",
+  "visibility"
 ] as const
+
 
 Object.freeze(icons)
 
