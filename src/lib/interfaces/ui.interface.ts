@@ -1,9 +1,8 @@
 export interface UiState {
     confirmModal: UiConfirmModalPayload | null
-    toast: UiToastPayload | null
 }
 
-export interface UiToastPayload {
+interface UiToastPayload {
     visible: boolean
     title: string
     message: string

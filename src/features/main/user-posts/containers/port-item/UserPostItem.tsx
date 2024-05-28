@@ -1,22 +1,31 @@
 /* eslint-disable no-unused-vars */
 import React from "react"
 
+import { useTranslation } from "react-i18next"
+
 import { Flex } from "@/components/layouts"
 import { Icon, Text } from "@/components/ui"
+import { usePlugins } from "@/hooks"
 import { Post } from "@/lib/interfaces"
 
 interface UserPostItemProps {
     post: Post
-    handleEdit: (id: number) => void
+    handleEdit: (post: Post) => void
     handleDelete: (id: number) => void
 }
 
 const UserPostItem: React.FC<UserPostItemProps> = props => {
   const { post, handleEdit, handleDelete } = props
 
+  const { t } = useTranslation()
+  const { confirm } = usePlugins()
+
   const handleDeleteClick = () => {
-    // TODO: add Confirm
-    handleDelete(post.id)
+    confirm({
+      title: t("Posts.Delete"),
+      message: t("Posts.SureDelete"),
+      onAccept: () => handleDelete(post.id)
+    })
   }
 
   return (
@@ -41,7 +50,7 @@ const UserPostItem: React.FC<UserPostItemProps> = props => {
             name="edit"
             className="round-hover text-primary"
             role="button"
-            onClick={() => handleEdit(post.id)}
+            onClick={() => handleEdit(post)}
           />
 
           {/* Delete */}

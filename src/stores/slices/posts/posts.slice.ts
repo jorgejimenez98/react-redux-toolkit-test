@@ -13,7 +13,12 @@ const slice = createSlice({
   } as PostSliceState,
 
   // Reducers
-  reducers: {},
+  reducers: {
+    deletePost: (state, { payload } : PayloadAction<number>) => {
+      const oldList = state.posts
+      state.posts = oldList.filter(post => post.id !== payload)
+    }
+  },
 
   // Listeners for api calls
   extraReducers: builder => {
@@ -27,5 +32,6 @@ const slice = createSlice({
   }
 })
 
+export const { deletePost } = slice.actions
 
 export default slice.reducer

@@ -16,9 +16,14 @@
         "InvalidEmail": "Invalid email",
         "Required": "This field is required"
     },
+    "Posts": {
+        "Delete": "Delete Post",
+        "SureDelete": "Are you sure you want to delete the post?"
+    },
     "General": {
+        "Accept": "Accept",
         "MainHeader": "React frontend test",
         "PublicHeader": "Welcome to React Test",
-        "Footer": "Copyright © {{ currentYear }} - All right reserved "
+        "Footer": "Copyright © {{ currentYear }} - All rights reserved "
     }
 }

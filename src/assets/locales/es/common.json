@@ -16,7 +16,12 @@
         "InvalidEmail": "Correo no válido",
         "Required": "Campo requerido"
     },
+    "Posts": {
+        "Delete": "Eliminar publicación",
+        "SureDelete": "¿Seguro que desea eliminar la publicación?"
+    },
     "General": {
+        "Accept": "Aceptar",
         "MainHeader": "Prueba frontend de React",
         "PublicHeader": "Bienvenido a la prueba de React",
         "Footer": "Copyright © {{ currentYear }} - Todos los derechos reservados"

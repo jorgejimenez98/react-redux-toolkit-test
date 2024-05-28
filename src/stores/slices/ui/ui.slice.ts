@@ -3,12 +3,10 @@ import { createSlice } from "@reduxjs/toolkit"
 import type { PayloadAction } from "@reduxjs/toolkit"
 
 import { UiState, UiConfirmModalData } from "@/lib/interfaces"
-import { UiToastPayload } from "@/lib/interfaces/ui.interface"
 import { RootState } from "@/stores/store"
 
 const initialState: UiState = {
-  confirmModal: null,
-  toast: null
+  confirmModal: null
 }
 
 const uiSlice = createSlice({
@@ -24,20 +22,11 @@ const uiSlice = createSlice({
     },
     hideConfirmModal: state => {
       state.confirmModal = null
-    },
-
-    // Modal Confirm
-    showToast: (state, { payload } : PayloadAction<UiToastPayload>) => {
-      state.toast = payload
-    },
-    hideToast: state => {
-      state.toast = null
     }
   }
 })
 
-export const { showConfirmModal, hideConfirmModal, showToast, hideToast } = uiSlice.actions
+export const { showConfirmModal, hideConfirmModal } = uiSlice.actions
 export default uiSlice.reducer
 
 export const selectConfirmModalVisible = (state: RootState) => state.ui.confirmModal
-export const selectToastVisible = (state: RootState) => state.ui.toast
