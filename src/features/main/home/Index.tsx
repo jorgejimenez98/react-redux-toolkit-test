@@ -45,7 +45,10 @@ const HomePage = (): JSX.Element => {
                 </Text>
 
                 {/* Details Link */}
-                <Link to={`${PAGE_URLS.USER_POST}/${userPost.userId}`}>
+                <Link
+                  to={`${PAGE_URLS.USER_POST}/${userPost.userId}`}
+                  data-testid="redirect-link"
+                >
                   <Icon name="visibility" className="round-hover mt-1" />
                 </Link>
               </Flex>

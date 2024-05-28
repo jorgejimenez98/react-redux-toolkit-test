@@ -41,3 +41,5 @@ npm cypress open
 ![](/public/images/image-2.png)
 
 ![](/public/images/image-3.png)
+
+![](/public/images/image-4.png)

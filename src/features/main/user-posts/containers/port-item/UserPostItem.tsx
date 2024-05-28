@@ -47,6 +47,7 @@ const UserPostItem: React.FC<UserPostItemProps> = props => {
         <Flex gap="2">
           {/* Edit */}
           <Icon
+            data-testid="edit-button"
             name="edit"
             className="round-hover text-primary"
             role="button"
@@ -55,6 +56,7 @@ const UserPostItem: React.FC<UserPostItemProps> = props => {
 
           {/* Delete */}
           <Icon
+            data-testid="delete-button"
             name="delete"
             className="round-hover text-danger"
             role="button"
