@@ -1,5 +1,6 @@
 import { JSX } from "react"
 
+import toast from "react-hot-toast"
 import { useTranslation } from "react-i18next"
 import { Link, useParams } from "react-router-dom"
 
@@ -23,6 +24,7 @@ const UserPostsPage = (): JSX.Element => {
 
   const handleDeletePost = (postId: number) => {
     dispatch(deletePost(postId))
+    toast.success(t("General.DeleteSuccess"))
   }
 
   return (

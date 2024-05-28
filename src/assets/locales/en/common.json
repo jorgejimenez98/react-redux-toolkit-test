@@ -21,6 +21,7 @@
         "SureDelete": "Are you sure you want to delete the post?"
     },
     "General": {
+        "DeleteSuccess": "Registry deleted successfully",
         "Accept": "Accept",
         "MainHeader": "React frontend test",
         "PublicHeader": "Welcome to React Test",

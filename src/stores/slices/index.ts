@@ -1,6 +1,6 @@
 import authSlice, { selectCurrentUser, setUser } from "./auth/authSlice"
 import postsSlice, { deletePost } from "./posts/posts.slice"
-import uiSlice, { showConfirmModal, hideConfirmModal, showToast, hideToast, selectConfirmModalVisible } from "./ui/ui.slice"
+import uiSlice, { showConfirmModal, hideConfirmModal, selectConfirmModalVisible } from "./ui/ui.slice"
 
 export const appSlices = {
   auth: authSlice,
@@ -28,7 +28,5 @@ export {
 export {
   selectConfirmModalVisible,
   showConfirmModal,
-  hideConfirmModal,
-  showToast,
-  hideToast
+  hideConfirmModal
 }

@@ -2,6 +2,7 @@ import React, { Suspense } from "react"
 
 import "@/lib/config/i18n"
 import "@/assets/styles/_main.scss"
+import { Toaster } from "react-hot-toast"
 import { BrowserRouter } from "react-router-dom"
 
 import { Loader } from "./components/ui"
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           {/* Wrappers */}
           <ScrollUp />
           <ConfirmModal />
+          <Toaster />
         </Flex>
       </Suspense>
     </BrowserRouter>
