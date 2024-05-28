@@ -15,7 +15,7 @@ const MainHeader: React.FC = () => {
         <Logo text={t("General.MainHeader")} />
 
         <Flex gap="3" className="me-5" >
-          {<LanguageSelector />}
+          <LanguageSelector />
 
           <UserMenu />
         </Flex>

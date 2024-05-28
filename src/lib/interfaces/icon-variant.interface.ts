@@ -1,7 +1,8 @@
 const icons = [
   "edit",
   "delete",
-  "visibility"
+  "visibility",
+  "arrow_back"
 ] as const
 
 
