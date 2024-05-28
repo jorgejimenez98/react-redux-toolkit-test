@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+import { slowCypressDown } from "cypress-slow-down"
+slowCypressDown()
+
 describe("Header main", () => {
   const loginUrl = `${Cypress.env("VITE_FRONTEND_URL")}/login`
   const userEmail = "user@example.com"

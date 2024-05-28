@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+import { slowCypressDown } from "cypress-slow-down"
+slowCypressDown()
+
 describe("Login", () => {
   const loginUrl = `${Cypress.env("VITE_FRONTEND_URL")}/login`
   const userLocalStorageKey = Cypress.env("VITE_USER_LOCALSTORAGE_KEY")

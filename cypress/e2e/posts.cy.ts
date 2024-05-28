@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+import { slowCypressDown } from "cypress-slow-down"
+slowCypressDown()
+
 describe("Post Testing", () => {
   const loginUrl = `${Cypress.env("VITE_FRONTEND_URL")}/login`
 

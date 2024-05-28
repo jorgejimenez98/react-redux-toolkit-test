@@ -11,6 +11,7 @@ export default defineConfig({
   },
 
   env: {
+    commandDelay: 150,
     VITE_FRONTEND_URL: "http://localhost:5173",
     VITE_BACKEND_URL: "https://jsonplaceholder.typicode.com",
     VITE_USER_LOCALSTORAGE_KEY: "user-local"
