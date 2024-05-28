@@ -1,7 +1,6 @@
 import React from "react"
 
 import { Divider, Text } from ".."
-import "./card.styles.scss"
 
 interface CardProps {
   title?: string;
@@ -18,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
 
   const CARD_CLASSES = [
-    "card",
+    "card card-shadow p-2",
     align === "center" ? "text-center" : "text-start",
     className
   ].filter(Boolean).join(" ")

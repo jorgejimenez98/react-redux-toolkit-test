@@ -8,7 +8,7 @@ interface ListProps<T> {
 }
 
 const List = <T, >({ className, items, renderItem }: ListProps<T>): JSX.Element => {
-  const CLASS_NAMES = ["list-group", className].filter(Boolean).join(" ")
+  const CLASS_NAMES = ["list-group card-shadow", className].filter(Boolean).join(" ")
 
   return (
     <ul className={CLASS_NAMES}>

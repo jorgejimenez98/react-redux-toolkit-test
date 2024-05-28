@@ -4,7 +4,7 @@ import React from "react"
 // Load Pages
 const LoginPage = React.lazy(() => import("./features/auth/login/Index"))
 const HomePage = React.lazy(() => import("./features/main/home/Index"))
-const UserPostPage = React.lazy(() => import("./features/main/user-posts/Index"))
+const UserPostsPage = React.lazy(() => import("./features/main/user-posts/Index"))
 
 import { PAGE_TITLES, PAGE_URLS } from "./lib/constants"
 
@@ -31,7 +31,7 @@ export const pagesRoutes: AppRoute[] = [
   {
     title: PAGE_TITLES.USER_POSTS,
     path: `${PAGE_URLS.USER_POST}/:userId`,
-    element: <UserPostPage />,
+    element: <UserPostsPage />,
     isProtected: true
   }
 ]

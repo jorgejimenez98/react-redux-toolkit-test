@@ -2,13 +2,13 @@ import React from "react"
 
 import { IconVariant } from "@/lib/interfaces"
 
-interface IconProps {
+interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
     name: IconVariant
     className?: string
     onClick?: () => void
 }
 
-const Icon: React.FC<IconProps> = ({ name, className, onClick }) => {
+const Icon: React.FC<IconProps> = ({ name, className, onClick, ...restProps }) => {
 
   const CLASS_NAMES = [
     "material-symbols-outlined",
@@ -20,6 +20,7 @@ const Icon: React.FC<IconProps> = ({ name, className, onClick }) => {
     <span
       className={CLASS_NAMES}
       onClick={onClick}
+      {...restProps}
     >
       {name}
     </span>

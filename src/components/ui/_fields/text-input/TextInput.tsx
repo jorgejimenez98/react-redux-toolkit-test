@@ -8,7 +8,7 @@ import { Field } from "../field/Field"
 import type { TextInputProps } from "./text-input.properties"
 
 export const TextInput: React.FC<TextInputProps> = props => {
-  const { placeholder, alias, autoFocus, className, containerClassName, ...restProps } = props
+  const { placeholder, alias, autoFocus, className, type, containerClassName, ...restProps } = props
 
   const inputRef = useRef<HTMLInputElement | null>(null)
 
@@ -33,9 +33,9 @@ export const TextInput: React.FC<TextInputProps> = props => {
       {/* Input */}
       <input
         id={alias}
-        type='text'
         ref={inputRef}
         {...field}
+        type={type}
         placeholder={placeholder}
         className={INPUT_CLASSNAMES}
       />

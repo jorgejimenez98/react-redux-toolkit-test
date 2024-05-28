@@ -52,3 +52,10 @@ input[type="email"]:focus,
     height: 50px;
     font-size: 16px;
 }
+
+.card-shadow {
+    border-radius: 16px !important;
+    box-shadow: 4px 5px 18px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.08);
+}
